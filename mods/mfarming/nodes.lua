@@ -9,7 +9,7 @@ minetest.register_node("mfarming:farmable_soil", {
 		"mdefault_dirt.png",
 	},
 	groups = {crumbly=3, soil=1, farmable_soil=1},
-	drops = "mdefault:dirt",
+	drop = "mdefault:dirt",
 })
 
 minetest.register_node("mfarming:farmable_soil_irrigated", {
@@ -23,5 +23,5 @@ minetest.register_node("mfarming:farmable_soil_irrigated", {
 		"mdefault_dirt.png^mfarming_soil_wet_side.png",
 	},
 	groups = {crumbly = 3, soil = 1, farmable_soil = 1, irrigated_soil = 1},
-	drops = "mdefault:dirt",
+	drop = "mdefault:dirt",
 })

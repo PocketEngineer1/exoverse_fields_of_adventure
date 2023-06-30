@@ -38,9 +38,9 @@ minetest.register_tool("mfarming:hoe", {
 	on_use = function(itemstack, user, pointed_thing)
 		local player_name = user:get_player_name()
 		
-		local above_pos = pointed_thing.above
 		if pointed_thing.type == "node" then
 			local node_pos = pointed_thing.under
+			local above_pos = {x = node_pos.x, y = node_pos.y + 1, z = node_pos.z}
 			local node_name = minetest.get_node(node_pos).name
 
 			if node_name == "mdefault:dirt" and minetest.get_node(above_pos).name == "air" then
