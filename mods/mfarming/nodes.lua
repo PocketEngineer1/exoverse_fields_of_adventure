@@ -10,6 +10,7 @@ minetest.register_node("mfarming:farmable_soil", {
 	},
 	groups = {crumbly=3, soil=1, farmable_soil=1},
 	drop = "mdefault:dirt",
+	stack_max = 65535,
 })
 
 minetest.register_node("mfarming:farmable_soil_irrigated", {
@@ -24,4 +25,5 @@ minetest.register_node("mfarming:farmable_soil_irrigated", {
 	},
 	groups = {crumbly = 3, soil = 1, farmable_soil = 1, irrigated_soil = 1},
 	drop = "mdefault:dirt",
+	stack_max = 65535,
 })

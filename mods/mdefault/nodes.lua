@@ -6,12 +6,15 @@ minetest.register_node("mdefault:stone", {
 	description = "Stone",
 	tiles = {"mdefault_stone.png"},
 	groups = {cracky=3},
+	drop = "mdefault:cobble",
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:desert_stone", {
 	description = "Desert Stone",
 	tiles = {"mdefault_desert_stone.png"},
 	groups = {cracky=3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:dirt_with_grass", {
@@ -21,6 +24,7 @@ minetest.register_node("mdefault:dirt_with_grass", {
 		{name = "mdefault_dirt.png^mdefault_grass_side.png",
 		tileable_vertical = false}},
 	groups = {crumbly=3, soil=1},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:dirt_with_snow", {
@@ -30,30 +34,35 @@ minetest.register_node("mdefault:dirt_with_snow", {
 		{name = "mdefault_dirt.png^mdefault_snow_side.png",
 		tileable_vertical = false}},
 	groups = {crumbly=3, soil=1},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:dirt", {
 	description = "Dirt",
 	tiles ={"mdefault_dirt.png"},
 	groups = {crumbly=3, soil=1},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:sand", {
 	description = "Sand",
 	tiles ={"mdefault_sand.png"},
 	groups = {crumbly=3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:desert_sand", {
 	description = "Desert Sand",
 	tiles ={"mdefault_desert_sand.png"},
 	groups = {crumbly=3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:gravel", {
 	description = "Gravel",
 	tiles ={"mdefault_gravel.png"},
 	groups = {crumbly=2},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:junglegrass", {
@@ -65,6 +74,7 @@ minetest.register_node("mdefault:junglegrass", {
 	paramtype = "light",
 	walkable = false,
 	groups = {snappy=3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:tree", {
@@ -72,6 +82,7 @@ minetest.register_node("mdefault:tree", {
 	tiles = {"mdefault_tree_top.png", "mdefault_tree_top.png", "mdefault_tree.png"},
 	is_ground_content = false,
 	groups = {choppy=2,oddly_breakable_by_hand=1},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:leaves", {
@@ -81,6 +92,7 @@ minetest.register_node("mdefault:leaves", {
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {snappy=3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:jungletree", {
@@ -88,6 +100,7 @@ minetest.register_node("mdefault:jungletree", {
 	tiles = {"mdefault_jungletree_top.png", "mdefault_jungletree_top.png", "mdefault_jungletree.png"},
 	is_ground_content = false,
 	groups = {choppy=2,oddly_breakable_by_hand=1},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:jungleleaves", {
@@ -97,6 +110,7 @@ minetest.register_node("mdefault:jungleleaves", {
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {snappy=3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:pine_tree", {
@@ -104,6 +118,7 @@ minetest.register_node("mdefault:pine_tree", {
 	tiles = {"mdefault_pine_tree_top.png", "mdefault_pine_tree_top.png", "mdefault_pine_tree.png"},
 	is_ground_content = false,
 	groups = {choppy=2,oddly_breakable_by_hand=1},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:pine_needles", {
@@ -113,6 +128,7 @@ minetest.register_node("mdefault:pine_needles", {
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {snappy=3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:water_source", {
@@ -139,6 +155,7 @@ minetest.register_node("mdefault:water_source", {
 	liquid_viscosity = WATER_VISC,
 	post_effect_color = {a = 64, r = 100, g = 100, b = 200},
 	groups = {water = 3, liquid = 3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:water_flowing", {
@@ -168,6 +185,7 @@ minetest.register_node("mdefault:water_flowing", {
 	liquid_viscosity = WATER_VISC,
 	post_effect_color = {a = 64, r = 100, g = 100, b = 200},
 	groups = {water = 3, liquid = 3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:river_water_source", {
@@ -227,6 +245,7 @@ minetest.register_node("mdefault:river_water_flowing", {
 	liquid_range = 2,
 	post_effect_color = {a = 103, r = 30, g = 76, b = 90},
 	groups = {water = 3, liquid = 3, },
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:lava_flowing", {
@@ -254,6 +273,7 @@ minetest.register_node("mdefault:lava_flowing", {
 	liquid_viscosity = LAVA_VISC,
 	post_effect_color = {a=192, r=255, g=64, b=0},
 	groups = {lava=3, liquid=1},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:lava_source", {
@@ -281,6 +301,7 @@ minetest.register_node("mdefault:lava_source", {
 	liquid_viscosity = LAVA_VISC,
 	post_effect_color = {a=192, r=255, g=64, b=0},
 	groups = {lava=3, liquid=1},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:cobble", {
@@ -288,6 +309,7 @@ minetest.register_node("mdefault:cobble", {
 	tiles ={"mdefault_cobble.png"},
 	is_ground_content = false,
 	groups = {cracky=3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:mossycobble", {
@@ -295,6 +317,7 @@ minetest.register_node("mdefault:mossycobble", {
 	tiles ={"mdefault_mossycobble.png"},
 	is_ground_content = false,
 	groups = {cracky=3},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:apple", {
@@ -308,15 +331,15 @@ minetest.register_node("mdefault:apple", {
 	sunlight_propagates = true,
 	walkable = false,
 	groups = {dig_immediate=3},
-
-	-- Make eatable because why not?
 	on_use = minetest.item_eat(2),
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:ice", {
 	description = "Ice",
 	tiles ={"mdefault_ice.png"},
 	groups = {cracky=3},
+	stack_max = 65535,
 })
 
 -- The snow nodes intentionally have different tints to make them more
@@ -332,10 +355,12 @@ minetest.register_node("mdefault:snow", {
 		type = "fixed",
 		fixed = {-0.5, -0.5, -0.5, 0.5, -0.25, 0.5},
 	},
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:snowblock", {
 	description = "Snow Block",
 	tiles ={"mdefault_snow.png"},
 	groups = {crumbly=3},
+	stack_max = 65535,
 })

@@ -20,6 +20,7 @@ minetest.register_node("mfarming:grass_1", {
 	walkable = false,
 	groups = {snappy = 3, flammable = 2, plant = 1},
     drop = "mfarming:seed_grass",
+	stack_max = 65535,
 
     -- Add callback for when the crop node is placed
     on_construct = function(pos)
@@ -44,6 +45,7 @@ minetest.register_node("mfarming:grass_2", {
 	walkable = false,
 	groups = {snappy = 3, flammable = 2, plant = 1},
     drop = "mfarming:seed_grass",
+	stack_max = 65535,
 
     on_construct = function(pos)
         local meta = minetest.get_meta(pos)
@@ -67,6 +69,7 @@ minetest.register_node("mfarming:grass_3", {
 	walkable = false,
 	groups = {snappy = 3, flammable = 2, plant = 1},
     drop = "mfarming:seed_grass",
+	stack_max = 65535,
 
     -- Add callback for when the crop node is placed
     on_construct = function(pos)
@@ -91,6 +94,7 @@ minetest.register_node("mfarming:grass_4", {
 	walkable = false,
 	groups = {snappy = 3, flammable = 2, plant = 1},
     drop = "mfarming:seed_grass",
+	stack_max = 65535,
 
     -- Add callback for when the crop node is placed
     on_construct = function(pos)
@@ -115,6 +119,7 @@ minetest.register_node("mfarming:grass_5", {
 	walkable = false,
 	groups = {snappy = 3, flammable = 2, plant = 1},
     drop = "mfarming:seed_grass",
+	stack_max = 65535,
 
     -- Add callback for when the crop node is placed
     on_construct = function(pos)
@@ -139,6 +144,7 @@ minetest.register_node("mfarming:grass_6", {
 	walkable = false,
 	groups = {snappy = 3, flammable = 2, plant = 1},
     drop = "mfarming:seed_grass",
+	stack_max = 65535,
 
     -- Add callback for when the crop node is placed
     on_construct = function(pos)
@@ -163,6 +169,7 @@ minetest.register_node("mfarming:grass_7", {
 	walkable = false,
 	groups = {snappy = 3, flammable = 2, plant = 1},
     drop = "mfarming:seed_grass",
+	stack_max = 65535,
 
     -- Add callback for when the crop node is placed
     on_construct = function(pos)
@@ -187,6 +194,7 @@ minetest.register_node("mfarming:grass_8", {
 	walkable = false,
 	groups = {snappy = 3, flammable = 2, plant = 1},
     drop = "mfarming:grass",
+	stack_max = 65535,
 
     -- Add callback for when the crop node is placed
     on_construct = function(pos)
@@ -210,16 +218,20 @@ minetest.register_node("mfarming:wild_grass", {
 	sunlight_propagates = true,
 	walkable = false,
 	groups = {snappy = 3, flammable = 2, plant = 1},
+	stack_max = 65535,
 })
 
 minetest.register_craftitem("mfarming:grass", {
     description = "Grass",
     inventory_image = "mfarming_grass.png",
+	stack_max = 65535,
 })
 
 minetest.register_craftitem("mfarming:seed_grass", {
 	description = "Grass Seed",
 	inventory_image = "mfarming_seed_grass.png",
+	stack_max = 65535,
+
 	on_place = function(itemstack, placer, pointed_thing)
 		if pointed_thing.type == "node" then
 			local above_pos = pointed_thing.above
