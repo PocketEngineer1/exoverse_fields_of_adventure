@@ -183,10 +183,12 @@ minetest.register_decoration({
 mapgen = {}
 local mod_path = minetest.get_modpath("mapgen")
 
-function mapgen.placeSchematic(pos, schematic_path)
-    local rotation = math.random(0, 3) * 90 -- Random rotation (0, 90, 180, or 270 degrees)
+local function placeSchematic(pos, schematic_path)
+    local rotation = math.random(0, 3) -- Random rotation (0, 1, 2, or 3)
 
-    minetest.place_schematic(pos, schematic_path, tostring(rotation), nil, false)
+    local rotation_str = tostring(rotation * 90) -- Convert rotation to degrees
+
+    minetest.place_schematic(pos, schematic_path, rotation_str, nil, false)
 end
 
 -- dofile(mod_path .. '/saplings/normal_tree.lua')
