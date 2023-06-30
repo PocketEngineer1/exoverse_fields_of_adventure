@@ -91,6 +91,28 @@ minetest.register_biome({
 	humidity_point = 50,
 })
 
+-- Trees
+minetest.register_decoration({
+    name = "mapgen:normal_tree",
+    deco_type = "schematic",
+    place_on = {"mdefault:dirt_with_grass"}, -- Where the decoration can be placed
+    sidelen = 16,
+    noise_params = {
+        offset = 0,
+        scale = 0.004,
+        spread = {x = 100, y = 100, z = 100},
+        seed = 1,
+        octaves = 3,
+        persist = 0.6
+    },
+    biomes = {"mapgen:grassland"}, -- Biomes where the decoration can appear
+    y_min = 1,
+    y_max = 31000,
+    schematic = "schematics/normal_tree.mts",
+    flags = "place_center_x, place_center_z",
+    rotation = "random",
+})
+
 -- Wild Crops
 minetest.register_decoration({
     deco_type = "simple",
@@ -157,3 +179,14 @@ minetest.register_decoration({
     spawn_by = "mdefault:dirt_with_grass",
     num_spawn_by = 1,
 })
+
+mapgen = {}
+local mod_path = minetest.get_modpath("mapgen")
+
+function mapgen.placeSchematic(pos, schematic_path)
+    local rotation = math.random(0, 3) * 90 -- Random rotation (0, 90, 180, or 270 degrees)
+
+    minetest.place_schematic(pos, schematic_path, tostring(rotation), nil, false)
+end
+
+-- dofile(mod_path .. '/saplings/normal_tree.lua')
