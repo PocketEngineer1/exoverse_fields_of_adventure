@@ -27,7 +27,6 @@ else
 	minetest.register_item(":", {
 		type = "none",
 		wield_image = "wieldhand.png",
-		wield_scale = {x = 1, y = 1, z = 2.5},
 		tool_capabilities = {
 			full_punch_interval = 0.9,
 			max_drop_level = 0,
@@ -43,9 +42,9 @@ else
 end
 
 -- Mese Pickaxe: special tool that digs "everything" instantly
-minetest.register_tool("tools:pick_mese", {
-	description = "Mese Pickaxe",
-	inventory_image = "default_pick_mese.png",
+minetest.register_tool("mtools:pick_creative", {
+	description = "Creative Pickaxe",
+	inventory_image = "mtools_pick_creative.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
 		max_drop_level=3,
@@ -61,11 +60,9 @@ minetest.register_tool("tools:pick_mese", {
 })
 
 -- Max. damage sword
-minetest.register_tool("tools:sword_mese", {
-	description = "Mese Sword".."\n"..
-		"Damage: fleshy=32767, fiery=32767, icy=32767".."\n"..
-		"Full Punch Interval: 0.0s",
-	inventory_image = "default_sword_mese.png",
+minetest.register_tool("mtools:sword_creative", {
+	description = "Creative Sword",
+	inventory_image = "mtools_sword_creative.png",
 	tool_capabilities = {
 		full_punch_interval = 0.0,
 		max_drop_level=1,
@@ -74,7 +71,7 @@ minetest.register_tool("tools:sword_mese", {
 })
 
 mtools = {}
-local mod_path = minetest.get_modpath("mfarming")
+local mod_path = minetest.get_modpath("mtools")
 
 -- dofile(mod_path .. '/picks.lua')
 -- dofile(mod_path .. '/shovels.lua')
