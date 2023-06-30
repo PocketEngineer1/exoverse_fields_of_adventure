@@ -12,7 +12,7 @@ local growth_times = {
 
 -- Register the crop nodes and its behavior
 minetest.register_node("mfarming:grass_1", {
-	description = "grass\nGrowth Stage 1",
+	description = "Grass\nGrowth Stage 1",
 	drawtype = "plantlike",
 	tiles = {"mfarming_grass_1.png"},
 	paramtype = "light",
@@ -36,7 +36,7 @@ minetest.register_node("mfarming:grass_1", {
 })
 
 minetest.register_node("mfarming:grass_2", {
-	description = "grass\nGrowth Stage 2",
+	description = "Grass\nGrowth Stage 2",
 	drawtype = "plantlike",
 	tiles = {"mfarming_grass_2.png"},
 	paramtype = "light",
@@ -59,7 +59,7 @@ minetest.register_node("mfarming:grass_2", {
 })
 
 minetest.register_node("mfarming:grass_3", {
-	description = "grass\nGrowth Stage 3",
+	description = "Grass\nGrowth Stage 3",
 	drawtype = "plantlike",
 	tiles = {"mfarming_grass_3.png"},
 	paramtype = "light",
@@ -83,7 +83,7 @@ minetest.register_node("mfarming:grass_3", {
 })
 
 minetest.register_node("mfarming:grass_4", {
-	description = "grass\nGrowth Stage 4",
+	description = "Grass\nGrowth Stage 4",
 	drawtype = "plantlike",
 	tiles = {"mfarming_grass_4.png"},
 	paramtype = "light",
@@ -107,7 +107,7 @@ minetest.register_node("mfarming:grass_4", {
 })
 
 minetest.register_node("mfarming:grass_5", {
-	description = "grass\nGrowth Stage 5",
+	description = "Grass\nGrowth Stage 5",
 	drawtype = "plantlike",
 	tiles = {"mfarming_grass_5.png"},
 	paramtype = "light",
@@ -131,7 +131,7 @@ minetest.register_node("mfarming:grass_5", {
 })
 
 minetest.register_node("mfarming:grass_6", {
-	description = "grass\nGrowth Stage 6",
+	description = "Grass\nGrowth Stage 6",
 	drawtype = "plantlike",
 	tiles = {"mfarming_grass_6.png"},
 	paramtype = "light",
@@ -155,7 +155,7 @@ minetest.register_node("mfarming:grass_6", {
 })
 
 minetest.register_node("mfarming:grass_7", {
-	description = "grass\nGrowth Stage 7",
+	description = "Grass\nGrowth Stage 7",
 	drawtype = "plantlike",
 	tiles = {"mfarming_grass_7.png"},
 	paramtype = "light",
@@ -179,7 +179,7 @@ minetest.register_node("mfarming:grass_7", {
 })
 
 minetest.register_node("mfarming:grass_8", {
-	description = "grass\nGrowth Stage 8",
+	description = "Grass\nGrowth Stage 8",
 	drawtype = "plantlike",
 	tiles = {"mfarming_grass_8.png"},
 	paramtype = "light",
@@ -213,12 +213,12 @@ minetest.register_node("mfarming:wild_grass", {
 })
 
 minetest.register_craftitem("mfarming:grass", {
-    description = "grass",
+    description = "Grass",
     inventory_image = "mfarming_grass.png",
 })
 
 minetest.register_craftitem("mfarming:seed_grass", {
-	description = "grass Seed",
+	description = "Grass Seed",
 	inventory_image = "mfarming_seed_grass.png",
 	on_place = function(itemstack, placer, pointed_thing)
 		if pointed_thing.type == "node" then

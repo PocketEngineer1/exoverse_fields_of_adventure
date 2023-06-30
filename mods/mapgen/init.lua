@@ -90,3 +90,70 @@ minetest.register_biome({
 	heat_point = 50,
 	humidity_point = 50,
 })
+
+-- Wild Crops
+minetest.register_decoration({
+    deco_type = "simple",
+    place_on = {"mdefault:dirt_with_grass"},
+    sidelen = 16,
+    noise_params = {
+        offset = 0,
+        scale = 0.001,
+        spread = {x = 200, y = 200, z = 200},
+        seed = 42,
+        octaves = 3,
+        persist = 0.6
+    },
+    biomes = {"mapgen:grassland"},
+    decoration = "mfarming:wild_wheat",
+    height = 1,
+    height_max = 1,
+    param2 = 0,
+    flags = "place_center_x, place_center_z",
+    spawn_by = "mdefault:dirt_with_grass",
+    num_spawn_by = 1,
+})
+
+minetest.register_decoration({
+    deco_type = "simple",
+    place_on = {"mdefault:dirt_with_grass"},
+    sidelen = 16,
+    noise_params = {
+        offset = 0,
+        scale = 0.001,
+        spread = {x = 200, y = 200, z = 200},
+        seed = 42,
+        octaves = 3,
+        persist = 0.6
+    },
+    biomes = {"mapgen:grassland"},
+    decoration = "mfarming:wild_eggplant",
+    height = 1,
+    height_max = 1,
+    param2 = 0,
+    flags = "place_center_x, place_center_z",
+    spawn_by = "mdefault:dirt_with_grass",
+    num_spawn_by = 1,
+})
+
+minetest.register_decoration({
+    deco_type = "simple",
+    place_on = {"mdefault:dirt_with_grass"},
+    sidelen = 16,
+    noise_params = {
+        offset = 0,
+        scale = 0.001,
+        spread = {x = 200, y = 200, z = 200},
+        seed = 42,
+        octaves = 3,
+        persist = 0.6
+    },
+    biomes = {"mapgen:grassland"},
+    decoration = "mfarming:wild_grass",
+    height = 1,
+    height_max = 1,
+    param2 = 0,
+    flags = "place_center_x, place_center_z",
+    spawn_by = "mdefault:dirt_with_grass",
+    num_spawn_by = 1,
+})
