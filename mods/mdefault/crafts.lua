@@ -11,3 +11,9 @@ minetest.register_craft({
         {"mdefault:wood"},
     },
 })
+
+minetest.register_craft({
+	type = "cooking",
+	output = "mdefault:lump_iron",
+	recipe = "mdefault:bar_iron",
+})
