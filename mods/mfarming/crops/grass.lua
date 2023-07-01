@@ -262,6 +262,16 @@ minetest.register_craftitem("mfarming:seed_grass", {
                     if not minetest.is_creative_enabled(placer:get_player_name()) then
                         itemstack:take_item()
                     end
+                elseif minetest.get_node(under_pos).name == "mdefault:dirt_with_grass" and
+                    minetest.get_node(above_pos).name == "air" then
+
+                    local node_name = "mfarming:wild_grass"
+                    minetest.set_node(above_pos, { name = node_name })
+
+                    -- Decrement the seed item count in the player's inventory
+                    if not minetest.is_creative_enabled(placer:get_player_name()) then
+                        itemstack:take_item()
+                    end
                 end
                 return itemstack
 			end

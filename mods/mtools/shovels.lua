@@ -1,8 +1,8 @@
 -- Shovels (dig crumbly)
 
-minetest.register_tool("tools:shovel_wood", {
+minetest.register_tool("mtools:shovel_wood", {
 	description = "Wooden Shovel",
-	inventory_image = "default_shovel_wood.png",
+	inventory_image = "mtools_shovel_wood.png",
 	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
@@ -11,9 +11,9 @@ minetest.register_tool("tools:shovel_wood", {
 	},
 })
 
-minetest.register_tool("tools:shovel_stone", {
+minetest.register_tool("mtools:shovel_stone", {
 	description = "Stone Shovel",
-	inventory_image = "default_shovel_stone.png",
+	inventory_image = "mtools_shovel_stone.png",
 	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
@@ -22,13 +22,13 @@ minetest.register_tool("tools:shovel_stone", {
 	},
 })
 
-minetest.register_tool("tools:shovel_iron", {
+minetest.register_tool("mtools:shovel_iron", {
 	description = "Iron Shovel",
-	inventory_image = "default_shovel_iron.png",
+	inventory_image = "mtools_shovel_iron.png",
 	tool_capabilities = {
 		max_drop_level=1,
 		groupcaps={
-			crumbly={times={[1]=1.00, [2]=0.70, [3]=0.60}, uses=90, maxlevel=0}
+			crumbly={times={[1]=1.00, [2]=0.70, [3]=0.10}, uses=90, maxlevel=0}
 		},
 	},
 })

@@ -264,9 +264,19 @@ minetest.register_craftitem("mfarming:seed_eggplant", {
 				if not minetest.is_creative_enabled(placer:get_player_name()) then
 					itemstack:take_item()
 				end
+            elseif minetest.get_node(under_pos).name == "mdefault:dirt_with_grass" and
+                minetest.get_node(above_pos).name == "air" then
 
-				return itemstack
+                -- Place the first growth stage node on top of the soil node
+                local node_name = "mfarming:wild_eggplant"
+                minetest.set_node(above_pos, { name = node_name })
+
+                -- Decrement the seed item count in the player's inventory
+                if not minetest.is_creative_enabled(placer:get_player_name()) then
+                    itemstack:take_item()
+                end
 			end
+            return itemstack
 		end
 	end,
 })
