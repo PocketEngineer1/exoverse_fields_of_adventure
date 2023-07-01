@@ -1,6 +1,6 @@
 -- Shears (dig snappy)
 
-minetest.register_tool("tools:shears_wood", {
+minetest.register_tool("mtools:shears_wood", {
 	description = "Wooden Shears",
 	inventory_image = "default_shears_wood.png",
 	tool_capabilities = {
@@ -11,7 +11,7 @@ minetest.register_tool("tools:shears_wood", {
 	},
 })
 
-minetest.register_tool("tools:shears_stone", {
+minetest.register_tool("mtools:shears_stone", {
 	description = "Stone Shears",
 	inventory_image = "default_shears_stone.png",
 	tool_capabilities = {
@@ -22,7 +22,7 @@ minetest.register_tool("tools:shears_stone", {
 	},
 })
 
-minetest.register_tool("tools:shears_iron", {
+minetest.register_tool("mtools:shears_iron", {
 	description = "Iron Shears",
 	inventory_image = "default_shears_iron.png",
 	tool_capabilities = {

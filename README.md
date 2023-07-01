@@ -4,4 +4,4 @@
 [logo](https://commons.wikimedia.org/wiki/File:Organic-Logo.svg)
 attribution: Dusan Milenkovic, europäische Kommission, Public domain, via Wikimedia Commons
 
-ChatGPT was a big help in making this game
+This game would almost certainly not exist without the help from ChatGPT
