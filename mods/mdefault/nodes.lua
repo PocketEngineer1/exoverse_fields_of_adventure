@@ -5,7 +5,7 @@ local LAVA_VISC = 7
 minetest.register_node("mdefault:stone", {
 	description = "Stone",
 	tiles = {"mdefault_stone.png"},
-	groups = {cracky=3},
+	groups = {cracky=3, stone=1},
 	drop = "mdefault:cobble",
 	stack_max = 65535,
 })
@@ -13,7 +13,7 @@ minetest.register_node("mdefault:stone", {
 minetest.register_node("mdefault:desert_stone", {
 	description = "Desert Stone",
 	tiles = {"mdefault_desert_stone.png"},
-	groups = {cracky=3},
+	groups = {cracky=3, stone=1},
 	stack_max = 65535,
 })
 
@@ -82,7 +82,7 @@ minetest.register_node("mdefault:tree", {
 	description = "Normal Tree Trunk",
 	tiles = {"mdefault_tree_top.png", "mdefault_tree_top.png", "mdefault_tree.png"},
 	is_ground_content = false,
-	groups = {choppy=2,oddly_breakable_by_hand=1},
+	groups = {choppy=2, oddly_breakable_by_hand=1, tree=1},
 	stack_max = 65535,
 })
 
@@ -92,7 +92,7 @@ minetest.register_node("mdefault:leaves", {
 	tiles = {"mdefault_leaves.png"},
 	paramtype = "light",
 	is_ground_content = false,
-	groups = {snappy=3},
+	groups = {snappy=3, leaves=1},
 	stack_max = 65535,
 })
 
@@ -310,7 +310,7 @@ minetest.register_node("mdefault:cobble", {
 	description = "Cobblestone",
 	tiles ={"mdefault_cobble.png"},
 	is_ground_content = false,
-	groups = {cracky=3},
+	groups = {cracky=3, stone=1},
 	stack_max = 65535,
 })
 
@@ -318,7 +318,7 @@ minetest.register_node("mdefault:mossycobble", {
 	description = "Mossy Cobblestone",
 	tiles ={"mdefault_mossycobble.png"},
 	is_ground_content = false,
-	groups = {cracky=3},
+	groups = {cracky=3, stone=1},
 	stack_max = 65535,
 })
 
@@ -348,7 +348,7 @@ minetest.register_node("mdefault:wood", {
 	description = "Normal Wood",
 	tiles = {"mdefault_wood.png"},
 	is_ground_content = false,
-	groups = {choppy=3,oddly_breakable_by_hand=1},
+	groups = {choppy=3, oddly_breakable_by_hand=1, wood=1},
 	stack_max = 65535,
 })
 

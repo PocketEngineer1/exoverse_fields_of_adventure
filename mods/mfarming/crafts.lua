@@ -2,8 +2,8 @@ minetest.register_craft({
     output = "mfarming:hoe",
     recipe = {
         {"mdefault:bar_iron", "mdefault:bar_iron"},
-        {"", "mdefault:stick"},
-        {"", "mdefault:stick"},
+        {"", "group:stick"},
+        {"", "group:stick"},
     },
 })
 
@@ -11,8 +11,8 @@ minetest.register_craft({
     output = "mfarming:hoe",
     recipe = {
         {"mdefault:bar_iron", "mdefault:bar_iron"},
-        {"mdefault:stick", ""},
-        {"mdefault:stick", ""},
+        {"group:stick", ""},
+        {"group:stick", ""},
     },
 })
 

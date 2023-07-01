@@ -27,8 +27,7 @@ function furnace.get_furnace_active_formspec(fuel_percent, item_percent)
 		"listring[context;src]"..
 		"listring[current_player;main]"..
 		"listring[context;fuel]"..
-		"listring[current_player;main]"..
-		furnace.get_hotbar_bg(0, 4.25)
+		"listring[current_player;main]"
 end
 
 function furnace.get_furnace_inactive_formspec()

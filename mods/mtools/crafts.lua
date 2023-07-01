@@ -4,18 +4,18 @@
 minetest.register_craft({
 	output = "mtools:axe_wood",
 	recipe = {
-		{"mdefault:wood", "mdefault:wood"},
-		{"mdefault:wood", "mdefault:stick"},
-		{"", "mdefault:stick"},
+		{"group:wood", "group:wood"},
+		{"group:wood", "group:stick"},
+		{"", "group:stick"},
 	}
 })
 
 minetest.register_craft({
 	output = "mtools:axe_stone",
 	recipe = {
-		{"mdefault:cobble", "mdefault:cobble"},
-		{"mdefault:cobble", "mdefault:stick"},
-		{"", "mdefault:stick"},
+		{"group:stone", "group:stone"},
+		{"group:stone", "group:stick"},
+		{"", "group:stick"},
 	}
 })
 
@@ -23,8 +23,8 @@ minetest.register_craft({
 	output = "mtools:axe_iron",
 	recipe = {
 		{"mdefault:bar_iron", "mdefault:bar_iron"},
-		{"mdefault:bar_iron", "mdefault:stick"},
-		{"", "mdefault:stick"},
+		{"mdefault:bar_iron", "group:stick"},
+		{"", "group:stick"},
 	}
 })
 
@@ -33,18 +33,18 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "mtools:axe_wood",
 	recipe = {
-		{"mdefault:wood", "mdefault:wood"},
-		{"mdefault:stick", "mdefault:wood"},
-		{"mdefault:stick", ""},
+		{"group:wood", "group:wood"},
+		{"group:stick", "group:wood"},
+		{"group:stick", ""},
 	}
 })
 
 minetest.register_craft({
 	output = "mtools:axe_stone",
 	recipe = {
-		{"mdefault:cobble", "mdefault:cobble"},
-		{"mdefault:stick", "mdefault:cobble"},
-		{"mdefault:stick", ""},
+		{"group:stone", "group:stone"},
+		{"group:stick", "group:stone"},
+		{"group:stick", ""},
 	}
 })
 
@@ -52,8 +52,8 @@ minetest.register_craft({
 	output = "mtools:axe_iron",
 	recipe = {
 		{"mdefault:bar_iron", "mdefault:bar_iron"},
-		{"mdefault:stick", "mdefault:bar_iron"},
-		{"mdefault:stick", ""},
+		{"group:stick", "mdefault:bar_iron"},
+		{"group:stick", ""},
 	}
 })
 
@@ -62,18 +62,18 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "mtools:pick_wood",
 	recipe = {
-		{"mdefault:wood", "mdefault:wood", "mdefault:wood"},
-		{"", "mdefault:stick", ""},
-		{"", "mdefault:stick", ""},
+		{"group:wood", "group:wood", "group:wood"},
+		{"", "group:stick", ""},
+		{"", "group:stick", ""},
 	}
 })
 
 minetest.register_craft({
 	output = "mtools:pick_stone",
 	recipe = {
-		{"mdefault:cobble", "mdefault:cobble", "mdefault:cobble"},
-		{"", "mdefault:stick", ""},
-		{"", "mdefault:stick", ""},
+		{"group:stone", "group:stone", "group:stone"},
+		{"", "group:stick", ""},
+		{"", "group:stick", ""},
 	}
 })
 
@@ -81,8 +81,8 @@ minetest.register_craft({
 	output = "mtools:pick_iron",
 	recipe = {
 		{"mdefault:bar_iron", "mdefault:bar_iron", "mdefault:bar_iron"},
-		{"", "mdefault:stick", ""},
-		{"", "mdefault:stick", ""},
+		{"", "group:stick", ""},
+		{"", "group:stick", ""},
 	}
 })
 
@@ -91,18 +91,18 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "mtools:shovel_wood",
 	recipe = {
-		{"mdefault:wood"},
-		{"mdefault:stick"},
-		{"mdefault:stick"},
+		{"group:wood"},
+		{"group:stick"},
+		{"group:stick"},
 	}
 })
 
 minetest.register_craft({
 	output = "mtools:shovel_stone",
 	recipe = {
-		{"mdefault:cobble"},
-		{"mdefault:stick"},
-		{"mdefault:stick"},
+		{"group:stone"},
+		{"group:stick"},
+		{"group:stick"},
 	}
 })
 
@@ -110,8 +110,8 @@ minetest.register_craft({
 	output = "mtools:shovel_iron",
 	recipe = {
 		{"mdefault:bar_iron"},
-		{"mdefault:stick"},
-		{"mdefault:stick"},
+		{"group:stick"},
+		{"group:stick"},
 	}
 })
 
@@ -120,16 +120,16 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "mtools:shears_wood",
 	recipe = {
-		{"mdefault:wood", ""},
-		{"mdefault:stick", "mdefault:wood"},
+		{"group:wood", ""},
+		{"group:stick", "group:wood"},
 	}
 })
 
 minetest.register_craft({
 	output = "mtools:shears_stone",
 	recipe = {
-		{"mdefault:cobble", ""},
-		{"mdefault:stick", "mdefault:cobble"},
+		{"group:stone", ""},
+		{"group:stick", "group:stone"},
 	}
 })
 
@@ -137,6 +137,6 @@ minetest.register_craft({
 	output = "mtools:shears_iron",
 	recipe = {
 		{"mdefault:bar_iron", ""},
-		{"mdefault:stick", "mdefault:bar_iron"},
+		{"group:stick", "mdefault:bar_iron"},
 	}
 })

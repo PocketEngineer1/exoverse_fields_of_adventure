@@ -1,17 +1,23 @@
 minetest.register_craft({
 	type = "fuel",
-	recipe = "mdefault:wood",
+	recipe = "group:wood",
 	burntime = 3,
 })
 
 minetest.register_craft({
 	type = "fuel",
-	recipe = "mdefault:tree",
+	recipe = "group:tree",
 	burntime = 3,
 })
 
 minetest.register_craft({
 	type = "fuel",
-	recipe = "mdefault:leaves",
+	recipe = "group:leaves",
+	burntime = 1,
+})
+
+minetest.register_craft({
+	type = "fuel",
+	recipe = "group:stick",
 	burntime = 1,
 })

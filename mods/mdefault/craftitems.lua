@@ -2,6 +2,7 @@ minetest.register_craftitem("mdefault:stick", {
 	description = "Stick",
 	inventory_image = "mdefault_stick.png",
 	stack_max = 65535,
+	group = {stick=1}
 })
 
 minetest.register_craftitem("mdefault:bar_iron", {
