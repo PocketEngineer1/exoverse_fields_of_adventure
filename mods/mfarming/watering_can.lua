@@ -33,7 +33,7 @@ minetest.register_tool("mfarming:watering_can", {
                     itemstack:add_wear(65535 / 10)
 
                     -- Check if the watering can is empty after use
-                    if itemstack:get_wear() >= 65535 or itemstack:get_wear() == 0 then
+                    if itemstack:get_wear() == 0 then
                         itemstack:set_name("mfarming:empty_watering_can")
                         itemstack:set_wear(0)
                         itemstack:set_metadata("")

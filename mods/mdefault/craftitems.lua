@@ -9,3 +9,9 @@ minetest.register_craftitem("mdefault:bar_iron", {
 	inventory_image = "mdefault_bar_iron.png",
 	stack_max = 65535,
 })
+
+minetest.register_craftitem("mdefault:lump_iron", {
+	description = "Iron Lump",
+	inventory_image = "mdefault_lump_iron.png",
+	stack_max = 65535,
+})

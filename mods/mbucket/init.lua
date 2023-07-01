@@ -5,7 +5,6 @@ minetest.register_craftitem("mbucket:sponge", {
     description = "Sponge",
     inventory_image = "mbucket_sponge.png",
     liquids_pointable = true,
-    stack_max = 1,
 
     on_place = function(itemstack, placer, pointed_thing)
         local player_name = placer:get_player_name()
@@ -25,6 +24,13 @@ minetest.register_craftitem("mbucket:sponge", {
 
         return itemstack
     end,
+})
+
+minetest.register_craftitem("mbucket:wet_sponge", {
+    description = "Wet Sponge",
+    inventory_image = "mbucket_wet_sponge.png",
+    liquids_pointable = true,
+    stack_max = 65535,
 })
 
 minetest.register_craftitem("mbucket:bucket", {

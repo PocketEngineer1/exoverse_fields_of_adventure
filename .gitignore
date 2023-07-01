@@ -40,9 +40,11 @@ luac.out
 *.hex
 
 # Nextcloud Stuff
+.owncloudsync.log
 .nextcloudsync.log
 .sync_3ac0994c3fb7.db
 .sync_3ac0994c3fb7.db-wal
+.sync_3ac0994c3fb7.db-shm
 
 # Windows Stuff
 Desktop.ini

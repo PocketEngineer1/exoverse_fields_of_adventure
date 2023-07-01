@@ -191,4 +191,4 @@ local function placeSchematic(pos, schematic_path)
     minetest.place_schematic(pos, schematic_path, rotation_str, nil, false)
 end
 
--- dofile(mod_path .. '/saplings/normal_tree.lua')
+dofile(mod_path .. '/ores.lua')
