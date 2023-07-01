@@ -211,7 +211,7 @@ minetest.register_node("mfarming:grass_8", {
 })
 
 minetest.register_node("mfarming:wild_grass", {
-	description = "Wild grass",
+	description = "Wild Grass",
 	drawtype = "plantlike",
 	tiles = {"mfarming_wild_grass.png"},
 	paramtype = "light",
