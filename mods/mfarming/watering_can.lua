@@ -83,10 +83,10 @@ minetest.register_craftitem("mfarming:empty_watering_can", {
         if pointed_thing.type == "node" then
             if node_def and node_def.groups and node_def.groups.water then
                 local inventory = placer:get_inventory()
-                local isMainInventoryEmpty = true
+                local isMainInventoryEmpty = false
                 for _, stack in ipairs(inventory:get_list("main")) do
-                    if not stack:is_empty() then
-                        isMainInventoryEmpty = false
+                    if stack:is_empty() then
+                        isMainInventoryEmpty = true
                         break
                     end
                 end
