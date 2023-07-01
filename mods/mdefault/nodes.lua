@@ -342,6 +342,14 @@ minetest.register_node("mdefault:ice", {
 	stack_max = 65535,
 })
 
+minetest.register_node("mdefault:wood", {
+	description = "Normal Wood",
+	tiles = {"mdefault_wood.png"},
+	is_ground_content = false,
+	groups = {choppy=3,oddly_breakable_by_hand=1},
+	stack_max = 65535,
+})
+
 -- The snow nodes intentionally have different tints to make them more
 -- distinguishable
 minetest.register_node("mdefault:snow", {

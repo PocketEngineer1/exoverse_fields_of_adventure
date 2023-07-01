@@ -319,7 +319,7 @@ function stamina.set_sprinting(player, sprinting)
 				maxsize = 1.0,
 				vertical = false,
 				collisiondetection = false,
-				texture = "default_dirt.png",
+				texture = "mdefault_dirt.png",
 			})
 		end
 	end

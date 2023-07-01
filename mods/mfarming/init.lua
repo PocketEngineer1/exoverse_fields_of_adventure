@@ -60,6 +60,15 @@ minetest.register_tool("mfarming:hoe", {
 	end,
 })
 
+minetest.register_craft({
+    output = "mfarming:hoe",
+    recipe = {
+        {"mdefault:iron", "mdefault:iron"},
+        {"", "mdefault:stick"},
+        {"", "mdefault:stick"},
+    },
+})
+
 dofile(mod_path .. "/nodes.lua")
 dofile(mod_path .. "/watering_can.lua")
 

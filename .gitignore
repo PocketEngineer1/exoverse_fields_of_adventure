@@ -39,3 +39,10 @@ luac.out
 *.x86_64
 *.hex
 
+# Nextcloud Stuff
+.nextcloudsync.log
+.sync_3ac0994c3fb7.db
+.sync_3ac0994c3fb7.db-wal
+
+# Windows Stuff
+Desktop.ini
