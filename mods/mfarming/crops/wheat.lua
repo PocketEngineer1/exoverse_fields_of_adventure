@@ -18,7 +18,7 @@ minetest.register_node("mfarming:wheat_1", {
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
-	groups = {snappy = 3, flammable = 2, plant = 1},
+	groups = {snappy = 3, flammable = 2, plant = 1, not_in_creative_inventory=1},
     drop = "mfarming:seed_wheat",
 	stack_max = 65535,
 
@@ -43,7 +43,7 @@ minetest.register_node("mfarming:wheat_2", {
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
-	groups = {snappy = 3, flammable = 2, plant = 1},
+	groups = {snappy = 3, flammable = 2, plant = 1, not_in_creative_inventory=1},
     drop = "mfarming:seed_wheat",
 	stack_max = 65535,
 
@@ -67,7 +67,7 @@ minetest.register_node("mfarming:wheat_3", {
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
-	groups = {snappy = 3, flammable = 2, plant = 1},
+	groups = {snappy = 3, flammable = 2, plant = 1, not_in_creative_inventory=1},
     drop = "mfarming:seed_wheat",
 	stack_max = 65535,
 
@@ -92,7 +92,7 @@ minetest.register_node("mfarming:wheat_4", {
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
-	groups = {snappy = 3, flammable = 2, plant = 1},
+	groups = {snappy = 3, flammable = 2, plant = 1, not_in_creative_inventory=1},
     drop = "mfarming:seed_wheat",
 	stack_max = 65535,
 
@@ -117,7 +117,7 @@ minetest.register_node("mfarming:wheat_5", {
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
-	groups = {snappy = 3, flammable = 2, plant = 1},
+	groups = {snappy = 3, flammable = 2, plant = 1, not_in_creative_inventory=1},
     drop = "mfarming:seed_wheat",
 	stack_max = 65535,
 
@@ -142,7 +142,7 @@ minetest.register_node("mfarming:wheat_6", {
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
-	groups = {snappy = 3, flammable = 2, plant = 1},
+	groups = {snappy = 3, flammable = 2, plant = 1, not_in_creative_inventory=1},
     drop = "mfarming:seed_wheat",
 	stack_max = 65535,
 
@@ -167,7 +167,7 @@ minetest.register_node("mfarming:wheat_7", {
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
-	groups = {snappy = 3, flammable = 2, plant = 1},
+	groups = {snappy = 3, flammable = 2, plant = 1, not_in_creative_inventory=1},
     drop = "mfarming:seed_wheat",
 	stack_max = 65535,
 
@@ -192,7 +192,7 @@ minetest.register_node("mfarming:wheat_8", {
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
-	groups = {snappy = 3, flammable = 2, plant = 1},
+	groups = {snappy = 3, flammable = 2, plant = 1, not_in_creative_inventory=1},
     drop = "mfarming:wheat",
 	stack_max = 65535,
 
