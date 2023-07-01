@@ -1,13 +1,13 @@
 -- Define the growth time for each stage (in seconds)
 local growth_times = {
-    [1] = {min = 1, max = 1},
-    [2] = {min = 1, max = 1},
-    [3] = {min = 1, max = 1},
-    [4] = {min = 1, max = 1},
-    [5] = {min = 1, max = 1},
-    [6] = {min = 1, max = 1},
-    [7] = {min = 1, max = 1},
-    [8] = {min = 1, max = 1},
+    [1] = {min = 300, max = 600},
+    [2] = {min = 300, max = 600},
+    [3] = {min = 300, max = 600},
+    [4] = {min = 300, max = 600},
+    [5] = {min = 300, max = 600},
+    [6] = {min = 300, max = 600},
+    [7] = {min = 300, max = 600},
+    [8] = {min = 300, max = 600},
 }
 
 -- Register the crop nodes and its behavior
