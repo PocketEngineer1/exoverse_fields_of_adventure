@@ -2,7 +2,7 @@
 
 minetest.register_tool("mtools:shears_wood", {
 	description = "Wooden Shears",
-	inventory_image = "default_shears_wood.png",
+	inventory_image = "mtools_shears_wood.png",
 	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
@@ -13,7 +13,7 @@ minetest.register_tool("mtools:shears_wood", {
 
 minetest.register_tool("mtools:shears_stone", {
 	description = "Stone Shears",
-	inventory_image = "default_shears_stone.png",
+	inventory_image = "mtools_shears_stone.png",
 	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
@@ -24,7 +24,7 @@ minetest.register_tool("mtools:shears_stone", {
 
 minetest.register_tool("mtools:shears_iron", {
 	description = "Iron Shears",
-	inventory_image = "default_shears_iron.png",
+	inventory_image = "mtools_shears_iron.png",
 	tool_capabilities = {
 		max_drop_level=1,
 		groupcaps={
