@@ -210,13 +210,8 @@ minetest.register_node("mfarming:eggplant_8", {
     end,
 
     on_rightclick = function(pos, node, player, itemstack, pointed_thing)
-        -- Give the player the crop item
-        -- local crop_item = ItemStack("mfarming:eggplant")
-        local leftover = player:get_inventory():add_item("main", "mfarming:eggplant")
-
-        -- Replace the final growth stage node with the previous growth stage
-        if leftover:is_empty() then
-            local prev_node = minetest.get_node({x = pos.x, y = pos.y, z = pos.z})
+        if itemstack:is_empty() then
+            player:get_inventory():add_item("main", "mfarming:eggplant")
             minetest.set_node(pos, {name = "mfarming:eggplant_7"})
         end
     end,

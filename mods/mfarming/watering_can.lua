@@ -74,7 +74,7 @@ minetest.register_craftitem("mfarming:empty_watering_can", {
     description = "Empty Watering Can",
     inventory_image = "mfarming_empty_watering_can.png",
     liquids_pointable = true, -- Allow pointing at liquids for refilling
-    stack_max = 1,
+    stack_max = 65535,
 
     on_use = function(itemstack, placer, pointed_thing)
         local node = minetest.get_node(pointed_thing.under)
@@ -82,9 +82,20 @@ minetest.register_craftitem("mfarming:empty_watering_can", {
 
         if pointed_thing.type == "node" then
             if node_def and node_def.groups and node_def.groups.water then
+                local inventory = placer:get_inventory()
+                local isMainInventoryEmpty = true
+                for _, stack in ipairs(inventory:get_list("main")) do
+                    if not stack:is_empty() then
+                        isMainInventoryEmpty = false
+                        break
+                    end
+                end
+
                 -- Replace the empty watering can with a filled watering can
-                itemstack:set_name("mfarming:watering_can")
-                return itemstack
+                if isMainInventoryEmpty then
+                    itemstack:take_item()
+                    placer:get_inventory():add_item("main", "mfarming:watering_can")
+                end
             end
         end
 
