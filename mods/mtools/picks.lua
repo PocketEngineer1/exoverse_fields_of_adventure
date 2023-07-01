@@ -6,7 +6,7 @@ minetest.register_tool("mtools:pick_wood", {
 	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
-			cracky={times={[3]=2.00}, uses=30, maxlevel=0}
+			cracky={times={[3]=2.00}, uses=100, maxlevel=0}
 		},
 	},
 })
@@ -17,7 +17,7 @@ minetest.register_tool("mtools:pick_stone", {
 	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
-			cracky={times={[2]=2.00, [3]=1.50}, uses=60, maxlevel=0}
+			cracky={times={[2]=2.00, [3]=1.50}, uses=200, maxlevel=0}
 		},
 	},
 })
@@ -28,7 +28,7 @@ minetest.register_tool("mtools:pick_iron", {
 	tool_capabilities = {
 		max_drop_level=1,
 		groupcaps={
-			cracky={times={[1]=2.00, [2]=1.50, [3]=1.00}, uses=90, maxlevel=0}
+			cracky={times={[1]=2.00, [2]=1.50, [3]=1.00}, uses=300, maxlevel=0}
 		},
 	},
 })

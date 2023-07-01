@@ -75,8 +75,8 @@ local mod_path = minetest.get_modpath("mtools")
 
 dofile(mod_path .. '/picks.lua')
 -- dofile(mod_path .. '/shovels.lua')
--- dofile(mod_path .. '/axes.lua')
--- dofile(mod_path .. '/shears.lua')
+dofile(mod_path .. '/axes.lua')
+dofile(mod_path .. '/shears.lua')
 -- dofile(mod_path .. '/swords.lua')
 
 dofile(mod_path .. '/crafts.lua')
