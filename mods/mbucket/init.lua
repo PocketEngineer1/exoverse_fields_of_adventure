@@ -1,6 +1,14 @@
 mbucket = {}
 local mod_path = minetest.get_modpath("mbucket")
 
+minetest.register_craft({
+    output = "mbucket:bucket",
+    recipe = {
+        {"mdefault:bar_iron", "", "mdefault:bar_iron"},
+        {"", "mdefault:bar_iron", ""},
+    },
+})
+
 minetest.register_craftitem("mbucket:sponge", {
     description = "Sponge",
     inventory_image = "mbucket_sponge.png",
