@@ -6,7 +6,7 @@ minetest.register_tool("mtools:shears_wood", {
 	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
-			snappy={times={[3]=1.00}, uses=30, maxlevel=0},
+			snappy={times={[3]=1.00}, uses=100, maxlevel=0},
 		},
 	},
 })
@@ -17,7 +17,7 @@ minetest.register_tool("mtools:shears_stone", {
 	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
-			snappy={times={[2]=1.00, [3]=0.50}, uses=60, maxlevel=0},
+			snappy={times={[2]=1.00, [3]=0.50}, uses=200, maxlevel=0},
 		},
 	},
 })
@@ -28,7 +28,7 @@ minetest.register_tool("mtools:shears_iron", {
 	tool_capabilities = {
 		max_drop_level=1,
 		groupcaps={
-			snappy={times={[1]=1.00, [2]=0.50, [3]=0.25}, uses=90, maxlevel=0},
+			snappy={times={[1]=1.00, [2]=0.50, [3]=0.25}, uses=300, maxlevel=0},
 		},
 	},
 })

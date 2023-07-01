@@ -25,6 +25,7 @@ minetest.register_node("mdefault:dirt_with_grass", {
 		tileable_vertical = false}},
 	groups = {crumbly=3, soil=1},
 	stack_max = 65535,
+	drop = "mdefault:dirt",
 })
 
 minetest.register_node("mdefault:dirt_with_snow", {
@@ -214,6 +215,7 @@ minetest.register_node("mdefault:river_water_source", {
 	liquid_range = 2,
 	post_effect_color = {a = 103, r = 30, g = 76, b = 90},
 	groups = {water = 3, liquid = 3, },
+	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:river_water_flowing", {
