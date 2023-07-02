@@ -21,11 +21,11 @@ function mfarming.growth_timer(pos, crop, growth_time_ranges)
 		local soil_node = minetest.get_node(soil_pos)
 
 		-- Check if the soil irrigated
-		if not (minetest.get_item_group(below_soil_pos.name, "ice") > 0) and minetest.get_item_group(soil_node.name, "farmable_soil") > 0 and minetest.get_item_group(soil_node.name, "irrigated_soil") > 0 then
+		if minetest.get_item_group(minetest.get_node(below_soil_pos).name, "ice") == 0 and minetest.get_item_group(soil_node.name, "farmable_soil") > 0 and minetest.get_item_group(soil_node.name, "irrigated_soil") > 0 then
 			-- Change the node to the next growth stage
 			local node_name = "mfarming:" .. crop .. "_" .. growth_stage
 			minetest.swap_node(pos, {name = node_name})
-			if minetest.get_item_group(below_soil_pos.name, "water") > 0 then
+			if minetest.get_item_group(below_soil_pos.name, "water") < 1 then
 				minetest.set_node(soil_pos, {name = "mfarming:farmable_soil"})
 			end
 		else
