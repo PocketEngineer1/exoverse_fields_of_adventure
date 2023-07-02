@@ -25,7 +25,7 @@ function mfarming.growth_timer(pos, crop, growth_time_ranges)
 			-- Change the node to the next growth stage
 			local node_name = "mfarming:" .. crop .. "_" .. growth_stage
 			minetest.swap_node(pos, {name = node_name})
-			if minetest.get_item_group(below_soil_pos.name, "water") < 1 then
+			if minetest.get_item_group(minetest.get_node(below_soil_pos).name, "water") == 0 then
 				minetest.set_node(soil_pos, {name = "mfarming:farmable_soil"})
 			end
 		else
