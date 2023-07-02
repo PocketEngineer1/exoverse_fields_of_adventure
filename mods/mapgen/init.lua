@@ -183,12 +183,4 @@ minetest.register_decoration({
 mapgen = {}
 local mod_path = minetest.get_modpath("mapgen")
 
-local function placeSchematic(pos, schematic_path)
-    local rotation = math.random(0, 3) -- Random rotation (0, 1, 2, or 3)
-
-    local rotation_str = tostring(rotation * 90) -- Convert rotation to degrees
-
-    minetest.place_schematic(pos, schematic_path, rotation_str, nil, false)
-end
-
 dofile(mod_path .. '/ores.lua')

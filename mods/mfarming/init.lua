@@ -17,14 +17,17 @@ function mfarming.growth_timer(pos, crop, growth_time_ranges)
 		minetest.get_node_timer(pos):start(next_growth_time)
 
 		local soil_pos = {x = pos.x, y = pos.y - 1, z = pos.z}
+		local below_soil_pos = {x = pos.x, y = pos.y - 2, z = pos.z}
 		local soil_node = minetest.get_node(soil_pos)
 
 		-- Check if the soil irrigated
-		if minetest.get_item_group(soil_node.name, "farmable_soil") > 0 and minetest.get_item_group(soil_node.name, "irrigated_soil") > 0 then
+		if not minetest.get_item_group(below_soil_pos.name, "ice") > 0 and minetest.get_item_group(soil_node.name, "farmable_soil") > 0 and minetest.get_item_group(soil_node.name, "irrigated_soil") > 0 then
 			-- Change the node to the next growth stage
 			local node_name = "mfarming:" .. crop .. "_" .. growth_stage
 			minetest.swap_node(pos, {name = node_name})
-			minetest.set_node(soil_pos, {name = "mfarming:farmable_soil"})
+			if minetest.get_item_group(below_soil_pos.name, "water") > 0 then
+				minetest.set_node(soil_pos, {name = "mfarming:farmable_soil"})
+			end
 		else
 			meta:set_int("growth_stage", growth_stage - 1)
 		end
@@ -35,6 +38,7 @@ dofile(mod_path .. "/hoe.lua")
 dofile(mod_path .. "/crafts.lua")
 dofile(mod_path .. "/nodes.lua")
 dofile(mod_path .. "/watering_can.lua")
+
 dofile(mod_path .. "/crops/wheat.lua")
 dofile(mod_path .. "/crops/eggplant.lua")
 dofile(mod_path .. "/crops/grass.lua")

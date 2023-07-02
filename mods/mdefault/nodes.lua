@@ -340,7 +340,7 @@ minetest.register_node("mdefault:apple", {
 minetest.register_node("mdefault:ice", {
 	description = "Ice",
 	tiles ={"mdefault_ice.png"},
-	groups = {cracky=3},
+	groups = {cracky=3, ice=1},
 	stack_max = 65535,
 })
 
