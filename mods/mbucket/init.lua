@@ -74,7 +74,6 @@ minetest.register_craftitem("mbucket:bucket", {
 minetest.register_craftitem("mbucket:bucket_water", {
     description = "Bucket of Water",
     inventory_image = "mbucket_bucket_water.png",
-    liquids_pointable = true,
     stack_max = 1,
 
     on_place = function(itemstack, placer, pointed_thing)
@@ -96,7 +95,6 @@ minetest.register_craftitem("mbucket:bucket_water", {
 minetest.register_craftitem("mbucket:bucket_river_water", {
     description = "Bucket of River Water",
     inventory_image = "mbucket_bucket_river_water.png",
-    liquids_pointable = true,
     stack_max = 1,
 
     on_place = function(itemstack, placer, pointed_thing)
@@ -118,7 +116,6 @@ minetest.register_craftitem("mbucket:bucket_river_water", {
 minetest.register_craftitem("mbucket:bucket_lava", {
     description = "Bucket of Lava",
     inventory_image = "mbucket_bucket_lava.png",
-    liquids_pointable = true,
     stack_max = 1,
 
     on_place = function(itemstack, placer, pointed_thing)
