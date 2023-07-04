@@ -48,21 +48,21 @@ minetest.register_node("mdefault:dirt", {
 minetest.register_node("mdefault:sand", {
 	description = "Sand",
 	tiles ={"mdefault_sand.png"},
-	groups = {crumbly=3},
+	groups = {crumbly=3, sand=1},
 	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:desert_sand", {
 	description = "Desert Sand",
 	tiles ={"mdefault_desert_sand.png"},
-	groups = {crumbly=3},
+	groups = {crumbly=3, sand=1},
 	stack_max = 65535,
 })
 
 minetest.register_node("mdefault:gravel", {
 	description = "Gravel",
 	tiles ={"mdefault_gravel.png"},
-	groups = {crumbly=2},
+	groups = {crumbly=2, gravel=1},
 	stack_max = 65535,
 })
 
@@ -93,6 +93,16 @@ minetest.register_node("mdefault:leaves", {
 	paramtype = "light",
 	is_ground_content = false,
 	groups = {snappy=3, leaves=1},
+	stack_max = 65535,
+})
+
+minetest.register_node("mdefault:glass", {
+	description = "Glass",
+	drawtype = "glasslike",
+	tiles = {"mdefault_glass.png"},
+	paramtype = "light",
+	is_ground_content = false,
+	groups = {cracky=3, glass=1},
 	stack_max = 65535,
 })
 

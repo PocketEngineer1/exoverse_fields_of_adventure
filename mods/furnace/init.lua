@@ -329,7 +329,6 @@ end
 --
 
 minetest.register_node("furnace:furnace", {
-	max_stack = 65535,
 	description = S("Furnace"),
 	tiles = {
 		"furnace_furnace_top.png", "furnace_furnace_bottom.png",

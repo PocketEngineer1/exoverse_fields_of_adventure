@@ -23,3 +23,9 @@ minetest.register_craft({
 	output = "mdefault:stone",
 	recipe = "mdefault:cobble",
 })
+
+minetest.register_craft({
+	type = "cooking",
+	output = "mdefault:glass",
+	recipe = "group:sand",
+})

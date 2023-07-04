@@ -49,7 +49,7 @@ minetest.register_biome({
 	node_top = "mdefault:dirt_with_grass",
 	depth_top = 1,
 	node_filler = "mdefault:dirt",
-	depth_filler = 1,
+	depth_filler = 3,
 	node_riverbed = "mdefault:sand",
 	depth_riverbed = 2,
 	node_dungeon = "mdefault:cobble",
