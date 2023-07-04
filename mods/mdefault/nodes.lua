@@ -383,19 +383,3 @@ minetest.register_node("mdefault:snowblock", {
 	groups = {crumbly=3},
 	stack_max = 65535,
 })
-
-minetest.register_node("mdefault:stone_with_iron", {
-	description = "Stone with Iron",
-	tiles = {"mdefault_stone.png^mdefault_ore_iron.png"},
-	groups = {cracky=3},
-	drop = "mdefault:lump_iron",
-	stack_max = 65535,
-})
-
-minetest.register_node("mdefault:desert_stone_with_iron", {
-	description = "Desert Stone",
-	tiles = {"mdefault_desert_stone.png^mdefault_ore_iron.png"},
-	groups = {cracky=3},
-	stack_max = 65535,
-	drop = "mdefault:lump_iron",
-})
