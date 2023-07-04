@@ -6,7 +6,7 @@ minetest.register_tool("mtools:shovel_wood", {
 	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
-			crumbly={times={[3]=0.50}, uses=30, maxlevel=0}
+			crumbly={times={[3]=0.50}, uses=100, maxlevel=0}
 		},
 	},
 })
@@ -17,7 +17,7 @@ minetest.register_tool("mtools:shovel_stone", {
 	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
-			crumbly={times={[2]=0.50, [3]=0.30}, uses=60, maxlevel=0}
+			crumbly={times={[2]=0.50, [3]=0.30}, uses=200, maxlevel=0}
 		},
 	},
 })
@@ -28,7 +28,7 @@ minetest.register_tool("mtools:shovel_iron", {
 	tool_capabilities = {
 		max_drop_level=1,
 		groupcaps={
-			crumbly={times={[1]=1.00, [2]=0.70, [3]=0.10}, uses=90, maxlevel=0}
+			crumbly={times={[1]=1.00, [2]=0.70, [3]=0.10}, uses=300, maxlevel=0}
 		},
 	},
 })

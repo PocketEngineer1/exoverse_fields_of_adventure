@@ -81,8 +81,9 @@ minetest.register_craftitem("mbucket:bucket_water", {
 
         local node_pos = pointed_thing.above
         local node = minetest.get_node(node_pos)
+        local node_def = minetest.registered_nodes[node.name]
 
-        if node.name == "air" then
+        if node_def and node_def.groups and node_def.groups.liquid then
             minetest.set_node(node_pos, {name = "mdefault:water_source"})
             itemstack:set_name("mbucket:bucket")
             return itemstack
@@ -102,8 +103,9 @@ minetest.register_craftitem("mbucket:bucket_river_water", {
 
         local node_pos = pointed_thing.above
         local node = minetest.get_node(node_pos)
+        local node_def = minetest.registered_nodes[node.name]
 
-        if node.name == "air" then
+        if node_def and node_def.groups and node_def.groups.liquid then
             minetest.set_node(node_pos, {name = "mdefault:river_water_source"})
             itemstack:set_name("mbucket:bucket")
             return itemstack
@@ -123,8 +125,9 @@ minetest.register_craftitem("mbucket:bucket_lava", {
 
         local node_pos = pointed_thing.above
         local node = minetest.get_node(node_pos)
+        local node_def = minetest.registered_nodes[node.name]
 
-        if node.name == "air" then
+        if node_def and node_def.groups and node_def.groups.liquid then
             minetest.set_node(node_pos, {name = "mdefault:lava_source"})
             itemstack:set_name("mbucket:bucket")
             return itemstack

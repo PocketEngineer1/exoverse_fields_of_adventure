@@ -102,7 +102,7 @@ minetest.register_node("mdefault:glass", {
 	tiles = {"mdefault_glass.png"},
 	paramtype = "light",
 	is_ground_content = false,
-	groups = {cracky=3, glass=1},
+	groups = {cracky=3, oddly_breakable_by_hand=1, glass=1},
 	stack_max = 65535,
 })
 
@@ -143,8 +143,7 @@ minetest.register_node("mdefault:pine_needles", {
 })
 
 minetest.register_node("mdefault:water_source", {
-	description = "Water Source".."\n"..
-		"Drowning damage: 1",
+	description = "Water Source",
 	drawtype = "liquid",
 	waving = 3,
 	tiles = {"mdefault_water.png"..WATER_ALPHA},
@@ -170,8 +169,7 @@ minetest.register_node("mdefault:water_source", {
 })
 
 minetest.register_node("mdefault:water_flowing", {
-	description = "Flowing Water".."\n"..
-		"Drowning damage: 1",
+	description = "Flowing Water",
 	drawtype = "flowingliquid",
 	waving = 3,
 	tiles = {"mdefault_water_flowing.png"},
@@ -200,8 +198,7 @@ minetest.register_node("mdefault:water_flowing", {
 })
 
 minetest.register_node("mdefault:river_water_source", {
-	description = "River Water Source".."\n"..
-		"Drowning damage: 1",
+	description = "River Water Source",
 	drawtype = "liquid",
 	waving = 3,
 	tiles = { "mdefault_river_water.png"..WATER_ALPHA },
@@ -229,8 +226,7 @@ minetest.register_node("mdefault:river_water_source", {
 })
 
 minetest.register_node("mdefault:river_water_flowing", {
-	description = "Flowing River Water".."\n"..
-		"Drowning damage: 1",
+	description = "Flowing River Water",
 	drawtype = "flowingliquid",
 	waving = 3,
 	tiles = {"mdefault_river_water_flowing.png"..WATER_ALPHA},
@@ -261,9 +257,7 @@ minetest.register_node("mdefault:river_water_flowing", {
 })
 
 minetest.register_node("mdefault:lava_flowing", {
-	description = "Flowing Lava".."\n"..
-		"4 damage per second".."\n"..
-		"Drowning damage: 1",
+	description = "Flowing Lava",
 	drawtype = "flowingliquid",
 	tiles = {"mdefault_lava_flowing.png"},
 	special_tiles = {
@@ -289,9 +283,7 @@ minetest.register_node("mdefault:lava_flowing", {
 })
 
 minetest.register_node("mdefault:lava_source", {
-	description = "Lava Source".."\n"..
-		"4 damage per second".."\n"..
-		"Drowning damage: 1",
+	description = "Lava Source",
 	drawtype = "liquid",
 	tiles = { "mdefault_lava.png" },
 	special_tiles = {
