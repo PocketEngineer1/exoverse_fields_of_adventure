@@ -13,26 +13,18 @@ minetest.register_node("out_of_nothing:crucible", {
         local player_name = player:get_player_name()
 
         -- If the player is holding an item, perform the melting logic
-        if not itemstack:is_empty() then
-            if meta:get_string("output") == "" then
-                if itemstack:get_name() == "mdefault:cobble" then
-                    itemstack:take_item()
-                    meta:set_string("output", "liquid_lava")
-                end
-            elseif meta:get_string("output") == "liquid_lava" then
-                if itemstack:get_name() == "mbucket:bucket" then
-                    meta:set_string("output", "")
-                    itemstack:take_item()
-                    inventory:add_item("main", {name = "mbucket:bucket_lava"})
-                else
-                    minetest.chat_send_player(player_name, "There's lava in the crucible")
-                end
+        if meta:get_string("output") == "" then
+            if itemstack:get_name() == "mdefault:cobble" then
+                itemstack:take_item()
+                meta:set_string("output", "liquid_lava")
             end
         elseif meta:get_string("output") == "liquid_lava" then
-            minetest.chat_send_player(player_name, "There's lava in the crucible")
-        else
-            minetest.chat_send_player(player_name, "There's something in the crucible")
+            if itemstack:get_name() == "mbucket:bucket" then
+                itemstack:set_name("mbucket:bucket_lava")
+                meta:set_string("output", "")
+            else
+                minetest.chat_send_player(player_name, "There's lava in the crucible")
+            end
         end
-        -- inventory:add_item("main", "mdefault:dust")
     end,
 })
