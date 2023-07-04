@@ -33,3 +33,11 @@ minetest.register_craft({
         {"", "mdefault:bar_iron", ""},
     },
 })
+
+minetest.register_craft({
+    output = "mdefault:dirt_with_grass",
+    recipe = {
+        {"mfarming:seed_grass"},
+        {"mdefault:dirt"},
+    },
+})

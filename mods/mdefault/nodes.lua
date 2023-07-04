@@ -45,6 +45,13 @@ minetest.register_node("mdefault:dirt", {
 	stack_max = 65535,
 })
 
+minetest.register_node("mdefault:dust", {
+	description = "Dust",
+	tiles ={"mdefault_dust.png"},
+	groups = {crumbly=3, dust=1},
+	stack_max = 65535,
+})
+
 minetest.register_node("mdefault:sand", {
 	description = "Sand",
 	tiles ={"mdefault_sand.png"},
