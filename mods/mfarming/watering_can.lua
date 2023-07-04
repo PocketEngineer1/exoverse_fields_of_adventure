@@ -34,7 +34,6 @@ minetest.register_tool("mfarming:watering_can", {
                 if itemstack:get_wear() == 0 then
                     itemstack:set_name("mfarming:empty_watering_can")
                     itemstack:set_wear(0)
-                    itemstack:set_metadata("")
                     minetest.chat_send_player(player_name, "The watering can is empty.")
                     return ItemStack("mfarming:empty_watering_can")
                 end
@@ -55,12 +54,10 @@ minetest.register_tool("mfarming:watering_can", {
 		
 		-- If the tool isn't broken then return the updated item.
 		if itemstack:get_wear() > 0 then
-			--print(itemstack:get_wear())
 			return itemstack
 		
 		-- If the tool is broken then replace it with something else.
 		else
-			--print(itemstack:get_wear())
 			--Note: the above would return "0".
 			local player_name = user:get_player_name()
 			minetest.chat_send_player(player_name, "Your watering can is empty.")

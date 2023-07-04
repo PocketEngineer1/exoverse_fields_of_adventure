@@ -33,3 +33,12 @@ minetest.register_tool("out_of_nothing:hammer", {
         end
     end,
 })
+
+minetest.register_craft({
+    output = "out_of_nothing:hammer",
+    recipe = {
+        {"", "mdefault:bar_iron", ""},
+        {"", "group:stick", "mdefault:bar_iron"},
+        {"group:stick", "", ""},
+    },
+})
