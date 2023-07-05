@@ -1,5 +1,5 @@
 minetest.register_node("mdefault:stone_with_gold", {
-	description = "Stone with gold",
+	description = "Stone with Gold",
 	tiles = {"mdefault_stone.png^mdefault_ore_gold.png"},
 	groups = {cracky=3},
 	drop = "mdefault:lump_gold",
@@ -7,13 +7,13 @@ minetest.register_node("mdefault:stone_with_gold", {
 })
 
 minetest.register_craftitem("mdefault:bar_gold", {
-	description = "gold Bar",
+	description = "Gold Bar",
 	inventory_image = "mdefault_bar_gold.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:lump_gold", {
-	description = "gold Lump",
+	description = "Gold Lump",
 	inventory_image = "mdefault_lump_gold.png",
 	stack_max = 65535,
 })
@@ -25,13 +25,13 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("mdefault:piece_gold", {
-	description = "gold Piece",
+	description = "Gold Piece",
 	inventory_image = "mdefault_piece_gold.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:chunk_gold", {
-	description = "gold Chunk",
+	description = "Gold Chunk",
 	inventory_image = "mdefault_chunk_gold.png",
 	stack_max = 65535,
 })
@@ -51,7 +51,7 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("mdefault:nugget_gold", {
-	description = "gold Nugget",
+	description = "Gold Nugget",
 	inventory_image = "mdefault_nugget_gold.png",
 	stack_max = 65535,
 })
@@ -73,25 +73,25 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("mdefault:dust_gold", {
-	description = "gold Dust",
+	description = "Gold Dust",
 	inventory_image = "mdefault_dust_gold.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:coin_gold", {
-	description = "gold Coin",
+	description = "Gold Coin",
 	inventory_image = "mdefault_coin_gold.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:plate_gold", {
-	description = "gold Plate",
+	description = "Gold Plate",
 	inventory_image = "mdefault_plate_gold.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:gear_gold", {
-	description = "gold Gear",
+	description = "Gold Gear",
 	inventory_image = "mdefault_gear_gold.png",
 	stack_max = 65535,
 })

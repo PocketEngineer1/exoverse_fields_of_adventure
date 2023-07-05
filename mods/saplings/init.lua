@@ -1,4 +1,4 @@
-minetest.register_node("saplings:sapling_normal", {
+minetest.register_node("saplings:sapling", {
     description = "Normal Sapling",
 	drawtype = "plantlike",
     paramtype = "light",

@@ -1,5 +1,5 @@
 minetest.register_node("mdefault:stone_with_lead", {
-	description = "Stone with lead",
+	description = "Stone with Lead",
 	tiles = {"mdefault_stone.png^mdefault_ore_lead.png"},
 	groups = {cracky=3},
 	drop = "mdefault:lump_lead",
@@ -7,13 +7,13 @@ minetest.register_node("mdefault:stone_with_lead", {
 })
 
 minetest.register_craftitem("mdefault:bar_lead", {
-	description = "lead Bar",
+	description = "Lead Bar",
 	inventory_image = "mdefault_bar_lead.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:lump_lead", {
-	description = "lead Lump",
+	description = "Lead Lump",
 	inventory_image = "mdefault_lump_lead.png",
 	stack_max = 65535,
 })
@@ -25,13 +25,13 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("mdefault:piece_lead", {
-	description = "lead Piece",
+	description = "Lead Piece",
 	inventory_image = "mdefault_piece_lead.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:chunk_lead", {
-	description = "lead Chunk",
+	description = "Lead Chunk",
 	inventory_image = "mdefault_chunk_lead.png",
 	stack_max = 65535,
 })
@@ -51,7 +51,7 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("mdefault:nugget_lead", {
-	description = "lead Nugget",
+	description = "Lead Nugget",
 	inventory_image = "mdefault_nugget_lead.png",
 	stack_max = 65535,
 })
@@ -73,25 +73,25 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("mdefault:dust_lead", {
-	description = "lead Dust",
+	description = "Lead Dust",
 	inventory_image = "mdefault_dust_lead.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:coin_lead", {
-	description = "lead Coin",
+	description = "Lead Coin",
 	inventory_image = "mdefault_coin_lead.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:plate_lead", {
-	description = "lead Plate",
+	description = "Lead Plate",
 	inventory_image = "mdefault_plate_lead.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:gear_lead", {
-	description = "lead Gear",
+	description = "Lead Gear",
 	inventory_image = "mdefault_gear_lead.png",
 	stack_max = 65535,
 })

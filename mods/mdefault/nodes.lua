@@ -383,3 +383,22 @@ minetest.register_node("mdefault:snowblock", {
 	groups = {crumbly=3},
 	stack_max = 65535,
 })
+
+minetest.register_node("mdefault:torch", {
+	description = "Torch",
+	tiles = {"mdefault_torch.png"},
+	paramtype = "light",
+	inventory_image = "mdefault_torch.png",
+	is_ground_content = false,
+	groups = {choppy=2, dig_immediate=3, torch=1},
+	stack_max = 65535,
+	light_source = 12,
+})
+
+minetest.register_node("mdefault:stone_with_coal", {
+	description = "Stone with copper",
+	tiles = {"mdefault_stone.png^mdefault_ore_coal.png"},
+	groups = {cracky=3},
+	drop = "mdefault:coal",
+	stack_max = 65535,
+})

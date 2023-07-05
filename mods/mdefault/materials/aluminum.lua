@@ -1,5 +1,5 @@
 minetest.register_node("mdefault:stone_with_aluminum", {
-	description = "Stone with aluminum",
+	description = "Stone with Aluminum",
 	tiles = {"mdefault_stone.png^mdefault_ore_aluminum.png"},
 	groups = {cracky=3},
 	drop = "mdefault:lump_aluminum",
@@ -7,13 +7,13 @@ minetest.register_node("mdefault:stone_with_aluminum", {
 })
 
 minetest.register_craftitem("mdefault:bar_aluminum", {
-	description = "aluminum Bar",
+	description = "Aluminum Bar",
 	inventory_image = "mdefault_bar_aluminum.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:lump_aluminum", {
-	description = "aluminum Lump",
+	description = "Aluminum Lump",
 	inventory_image = "mdefault_lump_aluminum.png",
 	stack_max = 65535,
 })
@@ -25,13 +25,13 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("mdefault:piece_aluminum", {
-	description = "aluminum Piece",
+	description = "Aluminum Piece",
 	inventory_image = "mdefault_piece_aluminum.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:chunk_aluminum", {
-	description = "aluminum Chunk",
+	description = "Aluminum Chunk",
 	inventory_image = "mdefault_chunk_aluminum.png",
 	stack_max = 65535,
 })
@@ -51,7 +51,7 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("mdefault:nugget_aluminum", {
-	description = "aluminum Nugget",
+	description = "Aluminum Nugget",
 	inventory_image = "mdefault_nugget_aluminum.png",
 	stack_max = 65535,
 })
@@ -73,25 +73,25 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("mdefault:dust_aluminum", {
-	description = "aluminum Dust",
+	description = "Aluminum Dust",
 	inventory_image = "mdefault_dust_aluminum.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:coin_aluminum", {
-	description = "aluminum Coin",
+	description = "Aluminum Coin",
 	inventory_image = "mdefault_coin_aluminum.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:plate_aluminum", {
-	description = "aluminum Plate",
+	description = "Aluminum Plate",
 	inventory_image = "mdefault_plate_aluminum.png",
 	stack_max = 65535,
 })
 
 minetest.register_craftitem("mdefault:gear_aluminum", {
-	description = "aluminum Gear",
+	description = "Aluminum Gear",
 	inventory_image = "mdefault_gear_aluminum.png",
 	stack_max = 65535,
 })

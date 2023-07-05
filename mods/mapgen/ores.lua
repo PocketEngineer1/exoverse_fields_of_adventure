@@ -11,6 +11,17 @@ minetest.register_ore({
     y_min          = -31000,
 })
 
+minetest.register_ore({
+    ore_type       = "scatter",
+    ore            = "mdefault:stone_with_coal",
+    wherein        = "mdefault:stone",
+    clust_scarcity = (9 * 9 * 9) * 2,
+    clust_num_ores = 24,
+    clust_size     = 3,
+    y_max          = 31000,
+    y_min          = -31000,
+})
+
 -- Blob
 
 minetest.register_ore({
