@@ -388,11 +388,11 @@ minetest.register_node("mdefault:torch", {
 	description = "Torch",
 	tiles = {"mdefault_torch.png"},
 	paramtype = "light",
-	inventory_image = "mdefault_torch.png",
 	is_ground_content = false,
 	groups = {choppy=2, dig_immediate=3, torch=1},
 	stack_max = 65535,
 	light_source = 12,
+	walkable = false,
 })
 
 minetest.register_node("mdefault:stone_with_coal", {
