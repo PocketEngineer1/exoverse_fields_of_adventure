@@ -402,3 +402,10 @@ minetest.register_node("mdefault:stone_with_coal", {
 	drop = "mdefault:coal",
 	stack_max = 65535,
 })
+
+minetest.register_node("mdefault:obsidian", {
+	description = "Obsidian",
+	tiles = {"mdefault_obsidian.png"},
+	groups = {cracky=1},
+	stack_max = 65535,
+})

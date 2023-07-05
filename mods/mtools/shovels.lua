@@ -28,7 +28,7 @@ minetest.register_tool("mtools:shovel_iron", {
 	tool_capabilities = {
 		max_drop_level=1,
 		groupcaps={
-			crumbly={times={[1]=1.00, [2]=0.70, [3]=0.10}, uses=300, maxlevel=0}
+			crumbly={times={[1]=1.00, [2]=0.50, [3]=0.10}, uses=300, maxlevel=0}
 		},
 	},
 })

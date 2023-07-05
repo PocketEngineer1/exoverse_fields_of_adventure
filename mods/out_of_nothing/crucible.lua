@@ -1,3 +1,5 @@
+-- crucible.lua
+
 -- Register the crucible node
 minetest.register_node("out_of_nothing:crucible", {
     description = "Crucible",
@@ -20,7 +22,7 @@ minetest.register_node("out_of_nothing:crucible", {
             end
         elseif meta:get_string("output") == "liquid_lava" then
             if itemstack:get_name() == "mbucket:bucket" then
-                itemstack:set_name("mbucket:bucket_lava")
+                itemstack:replace("mbucket:bucket_lava")
                 meta:set_string("output", "")
             else
                 minetest.chat_send_player(player_name, "There's lava in the crucible")

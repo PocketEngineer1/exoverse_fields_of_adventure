@@ -99,3 +99,22 @@ minetest.register_ore({
         persist = 0.0
     },
 })
+
+minetest.register_ore({
+    ore_type        = "blob",
+    ore             = "mdefault:obsidian",
+    wherein         = {"mdefault:stone"},
+    clust_scarcity  = (32 * 32 * 32) * 2,
+    clust_size      = 5,
+    y_max           = -8192,
+    y_min           = -31000,
+    noise_threshold = 0.0,
+    noise_params    = {
+        offset = 0.5,
+        scale = 0.2,
+        spread = {x = 5, y = 5, z = 5},
+        seed = 766,
+        octaves = 1,
+        persist = 0.0
+    },
+})

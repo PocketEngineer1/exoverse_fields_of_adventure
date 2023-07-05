@@ -25,3 +25,9 @@ minetest.register_craftitem("mdefault:charcoal", {
 	stack_max = 65535,
 	groups = {coal=1}
 })
+
+minetest.register_craftitem("mdefault:obsidian_shard", {
+	description = "Obsidian Shard",
+	inventory_image = "mdefault_obsidian_shard.png",
+	stack_max = 65535,
+})
