@@ -10,7 +10,7 @@ lootTables.gravel = {
     { item = "mdefault:piece_tin", weight = 1 },
     { item = "mdefault:piece_zinc", weight = 1 },
     { item = "mdefault:piece_gold", weight = 1 },
-    { item = "mdefault:piece_copper", weight = 1 },
+    { item = "mdefault:piece_copper", weight = 3 },
     { item = "mdefault:piece_iron", weight = 5 },
     { item = "mdefault:coal", weight = 10 },
 }
@@ -39,6 +39,8 @@ minetest.register_node("out_of_nothing:sieve", {
             elseif clicker:get_wielded_item():get_name() == "mdefault:sand" then
                 minetest.chat_send_player(player_name, "No loot table yet")
             elseif clicker:get_wielded_item():get_name() == "mdefault:dust" then
+                minetest.chat_send_player(player_name, "No loot table yet")
+            elseif clicker:get_wielded_item():get_name() == "mdefault:dirt" then
                 minetest.chat_send_player(player_name, "No loot table yet")
             else
                 minetest.chat_send_player(player_name, "Invalid item")

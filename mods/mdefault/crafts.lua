@@ -39,7 +39,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-    output = "saplings:sapling",
+    output = "mdefault:sapling_normal",
     recipe = {
         {"mdefault:leaves", "mdefault:leaves", "mdefault:leaves"},
         {"mdefault:leaves", "mdefault:leaves", "mdefault:leaves"},
