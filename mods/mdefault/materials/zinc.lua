@@ -21,7 +21,7 @@ minetest.register_craftitem("mdefault:lump_zinc", {
 minetest.register_craft({
 	type = "cooking",
 	output = "mdefault:bar_zinc",
-	recipe = "mdefault:lump_zinc",
+	recipe = "mdefault:chunk_zinc",
 })
 
 minetest.register_craftitem("mdefault:piece_zinc", {

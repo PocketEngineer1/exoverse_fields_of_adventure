@@ -21,7 +21,7 @@ minetest.register_craftitem("mdefault:lump_lead", {
 minetest.register_craft({
 	type = "cooking",
 	output = "mdefault:bar_lead",
-	recipe = "mdefault:lump_lead",
+	recipe = "mdefault:chunk_lead",
 })
 
 minetest.register_craftitem("mdefault:piece_lead", {

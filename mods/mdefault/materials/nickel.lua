@@ -21,7 +21,7 @@ minetest.register_craftitem("mdefault:lump_nickel", {
 minetest.register_craft({
 	type = "cooking",
 	output = "mdefault:bar_nickel",
-	recipe = "mdefault:lump_nickel",
+	recipe = "mdefault:chunk_nickel",
 })
 
 minetest.register_craftitem("mdefault:piece_nickel", {

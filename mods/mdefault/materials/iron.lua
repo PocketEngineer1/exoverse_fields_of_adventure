@@ -47,7 +47,7 @@ minetest.register_craft({
 minetest.register_craft({
 	type = "cooking",
 	output = "mdefault:bar_iron",
-	recipe = "mdefault:lump_iron",
+	recipe = "mdefault:chunk_iron",
 })
 
 minetest.register_craftitem("mdefault:nugget_iron", {

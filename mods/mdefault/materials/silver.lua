@@ -21,7 +21,7 @@ minetest.register_craftitem("mdefault:lump_silver", {
 minetest.register_craft({
 	type = "cooking",
 	output = "mdefault:bar_silver",
-	recipe = "mdefault:lump_silver",
+	recipe = "mdefault:chunk_silver",
 })
 
 minetest.register_craftitem("mdefault:piece_silver", {
