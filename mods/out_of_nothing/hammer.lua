@@ -12,19 +12,18 @@ minetest.register_tool("out_of_nothing:hammer", {
         if pointed_thing.type == "node" then
             local pos = pointed_thing.under
             local node = minetest.get_node(pos)
-            local inventory = player:get_inventory()
             
             if node.name == "mdefault:cobble" then
                 minetest.swap_node(pos, {name = "air"})
-                inventory:add_item("main", "mdefault:gravel")
+                minetest.add_item(pos, "mdefault:gravel")
                 itemstack:add_wear(65535 / 100)
             elseif node.name == "mdefault:gravel" then
                 minetest.swap_node(pos, {name = "air"})
-                inventory:add_item("main", "mdefault:sand")
+                minetest.add_item(pos, "mdefault:sand")
                 itemstack:add_wear(65535 / 100)
             elseif node.name == "mdefault:sand" then
                 minetest.swap_node(pos, {name = "air"})
-                inventory:add_item("main", "mdefault:dust")
+                minetest.add_item(pos, "mdefault:dust")
                 itemstack:add_wear(65535 / 100)
             end
 

@@ -46,3 +46,11 @@ minetest.register_craft({
         {"mdefault:leaves", "mdefault:leaves", "mdefault:leaves"},
     },
 })
+
+minetest.register_craft({
+    output = "mdefault:cobble",
+    recipe = {
+        {"mdefault:pebble", "mdefault:pebble"},
+        {"mdefault:pebble", "mdefault:pebble"},
+    },
+})

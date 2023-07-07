@@ -31,3 +31,9 @@ minetest.register_craftitem("mdefault:obsidian_shard", {
 	inventory_image = "mdefault_obsidian_shard.png",
 	stack_max = 65535,
 })
+
+minetest.register_craftitem("mdefault:pebble", {
+	description = "Pebble",
+	inventory_image = "mdefault_pebble.png",
+	stack_max = 65535,
+})

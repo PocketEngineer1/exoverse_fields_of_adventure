@@ -1,18 +1,26 @@
-local lootTables = {}
+out_of_nothing.sieve = {}
+out_of_nothing.sieve.loot_tables = {
+    gravel = {
+        { item = "mdefault:piece_aluminum", weight = 1 },
+        { item = "mdefault:piece_nickel", weight = 1 },
+        { item = "mdefault:piece_silver", weight = 1 },
+        { item = "mdefault:piece_uranium", weight = 1 },
+        { item = "mdefault:piece_lead", weight = 1 },
+        { item = "mdefault:piece_platinum", weight = 1 },
+        { item = "mdefault:piece_tin", weight = 1 },
+        { item = "mdefault:piece_zinc", weight = 1 },
+        { item = "mdefault:piece_gold", weight = 1 },
+        { item = "mdefault:piece_copper", weight = 3 },
+        { item = "mdefault:piece_iron", weight = 5 },
+        { item = "mdefault:coal", weight = 10 },
+    },
 
-lootTables.gravel = {
-    { item = "mdefault:piece_aluminum", weight = 1 },
-    { item = "mdefault:piece_nickel", weight = 1 },
-    { item = "mdefault:piece_silver", weight = 1 },
-    { item = "mdefault:piece_uranium", weight = 1 },
-    { item = "mdefault:piece_lead", weight = 1 },
-    { item = "mdefault:piece_platinum", weight = 1 },
-    { item = "mdefault:piece_tin", weight = 1 },
-    { item = "mdefault:piece_zinc", weight = 1 },
-    { item = "mdefault:piece_gold", weight = 1 },
-    { item = "mdefault:piece_copper", weight = 3 },
-    { item = "mdefault:piece_iron", weight = 5 },
-    { item = "mdefault:coal", weight = 10 },
+    dirt = {
+        { item = "mdefault:pebble", weight = 10 },
+        { item = "mfarming:seed_wheat", weight = 1 },
+        { item = "mfarming:seed_eggplant", weight = 1 },
+        { item = "mfarming:seed_grass", weight = 1 },
+    },
 }
 
 -- Define the sieve node and register it
@@ -32,16 +40,24 @@ minetest.register_node("out_of_nothing:sieve", {
             local random_value = math.random(1, 10)
             if clicker:get_wielded_item():get_name() == "mdefault:gravel" then
                 itemstack:take_item()
-                table.insert(drops, mloot.generateLoot(lootTables.gravel))
-                table.insert(drops, mloot.generateLoot(lootTables.gravel))
-                table.insert(drops, mloot.generateLoot(lootTables.gravel))
-                table.insert(drops, mloot.generateLoot(lootTables.gravel))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.gravel))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.gravel))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.gravel))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.gravel))
             elseif clicker:get_wielded_item():get_name() == "mdefault:sand" then
                 minetest.chat_send_player(player_name, "No loot table yet")
             elseif clicker:get_wielded_item():get_name() == "mdefault:dust" then
                 minetest.chat_send_player(player_name, "No loot table yet")
             elseif clicker:get_wielded_item():get_name() == "mdefault:dirt" then
-                minetest.chat_send_player(player_name, "No loot table yet")
+                itemstack:take_item()
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.dirt))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.dirt))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.dirt))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.dirt))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.dirt))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.dirt))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.dirt))
+                table.insert(drops, mloot.generateLoot(out_of_nothing.sieve.loot_tables.dirt))
             else
                 minetest.chat_send_player(player_name, "Invalid item")
             end
