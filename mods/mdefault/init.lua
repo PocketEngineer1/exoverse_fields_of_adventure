@@ -6,6 +6,7 @@ dofile(mod_path .. "/crafts.lua")
 dofile(mod_path .. "/nodes.lua")
 dofile(mod_path .. "/craftitems.lua")
 dofile(mod_path .. "/saplings.lua")
+dofile(mod_path .. "/awards.lua")
 
 dofile(mod_path .. "/materials/iron.lua")
 dofile(mod_path .. "/materials/gold.lua")

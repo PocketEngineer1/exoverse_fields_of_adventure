@@ -134,7 +134,7 @@ end
 local bag_recipes = {
 	small = {
 		rcp = {
-			{"", "farming:string", ""},
+			{"", "group:string", ""},
 			{"group:wool", "group:wool", "group:wool"},
 			{"group:wool", "group:wool", "group:wool"},
 		},
@@ -142,15 +142,15 @@ local bag_recipes = {
 	},
 	medium = {
 		rcp = {
-			{"farming:string", "i3:bag_small", "farming:string"},
-			{"farming:string", "i3:bag_small", "farming:string"},
+			{"group:string", "i3:bag_small", "group:string"},
+			{"group:string", "i3:bag_small", "group:string"},
 		},
 		size = 3,
 	},
 	large = {
 		rcp = {
-			{"farming:string", "i3:bag_medium", "farming:string"},
-			{"farming:string", "i3:bag_medium", "farming:string"},
+			{"group:string", "i3:bag_medium", "group:string"},
+			{"group:string", "i3:bag_medium", "group:string"},
 		},
 		size = 4,
 	},
