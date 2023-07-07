@@ -1,6 +1,3 @@
--- crucible.lua
-
--- Register the crucible node
 minetest.register_node("out_of_nothing:crucible", {
     description = "Crucible",
     tiles = {"out_of_nothing_crucible.png"},

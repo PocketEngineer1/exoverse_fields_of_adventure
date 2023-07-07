@@ -80,7 +80,6 @@ minetest.register_node("out_of_nothing:sieve", {
     end,      
 })
 
--- Add sieve recipes (optional)
 minetest.register_craft({
     output = "out_of_nothing:sieve",
     recipe = {
