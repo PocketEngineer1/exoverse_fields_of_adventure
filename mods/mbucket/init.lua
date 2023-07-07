@@ -66,8 +66,6 @@ minetest.register_craftitem("mbucket:bucket", {
             itemstack:set_name("mbucket:bucket_lava")
             return itemstack
         end
-
-        return itemstack
     end,
 })
 
@@ -77,18 +75,12 @@ minetest.register_craftitem("mbucket:bucket_water", {
     stack_max = 1,
 
     on_place = function(itemstack, placer, pointed_thing)
-        local player_name = placer:get_player_name()
-
         local node_pos = pointed_thing.above
         local node = minetest.get_node(node_pos)
         local node_def = minetest.registered_nodes[node.name]
 
-        if node_def and node_def.groups and node_def.groups.liquid then
-            minetest.set_node(node_pos, {name = "mdefault:water_source"})
-            itemstack:set_name("mbucket:bucket")
-            return itemstack
-        end
-
+        minetest.set_node(node_pos, {name = "mdefault:water_source"})
+        itemstack:set_name("mbucket:bucket")
         return itemstack
     end,
 })
@@ -99,18 +91,12 @@ minetest.register_craftitem("mbucket:bucket_river_water", {
     stack_max = 1,
 
     on_place = function(itemstack, placer, pointed_thing)
-        local player_name = placer:get_player_name()
-
         local node_pos = pointed_thing.above
         local node = minetest.get_node(node_pos)
         local node_def = minetest.registered_nodes[node.name]
 
-        if node_def and node_def.groups and node_def.groups.liquid then
-            minetest.set_node(node_pos, {name = "mdefault:river_water_source"})
-            itemstack:set_name("mbucket:bucket")
-            return itemstack
-        end
-
+        minetest.set_node(node_pos, {name = "mdefault:river_water_source"})
+        itemstack:set_name("mbucket:bucket")
         return itemstack
     end,
 })
@@ -121,18 +107,12 @@ minetest.register_craftitem("mbucket:bucket_lava", {
     stack_max = 1,
 
     on_place = function(itemstack, placer, pointed_thing)
-        local player_name = placer:get_player_name()
-
         local node_pos = pointed_thing.above
         local node = minetest.get_node(node_pos)
         local node_def = minetest.registered_nodes[node.name]
 
-        if node_def and node_def.groups and node_def.groups.liquid then
-            minetest.set_node(node_pos, {name = "mdefault:lava_source"})
-            itemstack:set_name("mbucket:bucket")
-            return itemstack
-        end
-
+        minetest.set_node(node_pos, {name = "mdefault:lava_source"})
+        itemstack:set_name("mbucket:bucket")
         return itemstack
     end,
 })
